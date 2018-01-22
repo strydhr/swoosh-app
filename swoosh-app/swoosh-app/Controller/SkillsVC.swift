@@ -9,9 +9,13 @@
 import UIKit
 
 class SkillsVC: UIViewController {
+    
+    var player: Player!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(player.selectedType)
 
         // Do any additional setup after loading the view.
     }
