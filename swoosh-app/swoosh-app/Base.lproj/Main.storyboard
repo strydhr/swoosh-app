@@ -22,10 +22,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SIv-l0-t3O"/>
                         <viewControllerLayoutGuide type="bottom" id="fEa-fI-ake"/>
@@ -96,19 +96,15 @@
                             <constraint firstItem="fEa-fI-ake" firstAttribute="top" secondItem="kow-te-3Db" secondAttribute="bottom" constant="30" id="z9T-M8-yY7"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgimg" destination="gW6-cb-Pvq" id="p6E-Bu-bLp"/>
-                        <outlet property="swoosh" destination="gdB-dk-Cue" id="Mld-BE-Ik6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--TypeVC-->
         <scene sceneID="8JD-Qd-A4y">
             <objects>
-                <viewController id="5yk-D1-al9" sceneMemberID="viewController">
+                <viewController id="5yk-D1-al9" customClass="TypeVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bYM-ZV-eYP"/>
                         <viewControllerLayoutGuide type="bottom" id="BJB-yq-Zjr"/>
@@ -186,6 +182,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextBtnPressed:" destination="5yk-D1-al9" eventType="touchUpInside" id="wXG-lh-UiB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgs-M8-19q">
                                 <rect key="frame" x="10" y="10" width="43" height="36"/>
@@ -218,16 +217,19 @@
                             <constraint firstItem="vgs-M8-19q" firstAttribute="leading" secondItem="A3h-mU-0Gg" secondAttribute="leading" constant="10" id="s9b-5C-pnJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="0Td-9H-2dp" kind="show" identifier="skillVCSegue" id="8Uo-on-jgo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIu-Nr-i2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wmq-MY-zap" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1053.5999999999999" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillsVC-->
         <scene sceneID="Cou-fE-nmT">
             <objects>
-                <viewController id="0Td-9H-2dp" sceneMemberID="viewController">
+                <viewController id="0Td-9H-2dp" customClass="SkillsVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zdj-AY-DTp"/>
                         <viewControllerLayoutGuide type="bottom" id="2H6-Pv-QLh"/>
